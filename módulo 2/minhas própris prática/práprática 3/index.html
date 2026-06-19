@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minicalculadora</title>
+    <style>
+     body{
+     background-image: linear-gradient(to right,rgb(58, 16, 16),rgb(138, 7, 7),rgb(65, 17, 17));
+     text-align: center;
+
+     }
+     main{
+
+        background-color: rgb(46, 10, 10);
+        height: 500px;
+        width: 400px;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 3px 3px 100px rgba(255, 0, 0, 0.308);
+        
+        
+
+        
+     }  
+
+    
+
+    
+
+     .k{
+      
+        background-color: white;
+        height: 60px;
+        width: 350px;
+        border-radius: 5px;
+        margin: auto;
+        text-align: right;
+        text-align: right center;
+             
+     }
+     .b{
+      background-color: red;
+      height: 80px;
+      width: 80px;
+      border-radius: 10px;
+      
+
+
+     }
+
+     .i{
+        background-color: blue;
+        height: 80px;
+        width: 80px;
+        border-radius: 10px;
+          
+     }
+
+     table{
+        margin: auto;
+     }
+
+     .ja{
+        text-transform: center;
+
+     }
+     #joe{
+      color:darkblue;
+     }
+
+     .h{
+
+      background-color: dodgerblue;
+     height: 20px;
+     width: 80px;
+     border-radius: 20px;
+     
+
+     }
+
+     .be{
+      background-color: aqua;
+      height: 500px;
+      width: 1000px;
+      border-radius: 10px;
+      margin: auto;
+     }
+    
+
+    </style>
+</head>
+<body>
+
+   <p class="be"></p>
+
+   <h4 class="h" id="entrar">ver outra</h4>
+    <h1 id="joe"></h1>
+
+
+    <main>
+       
+         <div>
+         <div class="ja">
+         <p class="k" id="resultado" ></p>
+
+         </div> 
+            
+         
+
+          <table>
+         <tr>
+         <td><button class="b" onclick="levar()">c</button></td>
+         <td><button class="b" onclick="back()"><</button></td>
+         <td><button class="b" onclick="ins(`/`)">/</button></td>
+         <td><button class="b" onclick="ins(`*`)">*</button></td>
+
+         </tr>
+           
+         <tr>
+         <td><button class="i" onclick="ins(`7`)">7</button></td>
+         <td><button class="i" onclick="ins(`8`)">8</button></td>
+         <td><button class="i" onclick="ins(`9`)">9</button></td>
+         <td><button class="b" onclick="ins(`-`)">-</button></td>
+
+         </tr>
+         <tr>
+         <td><button class="i" onclick="ins(`6`)">6</button></td>
+         <td><button class="i" onclick="ins(`5`)">5</button></td>
+         <td><button class="i" onclick="ins(`4`)">4</button></td>
+         <td><button class="b" onclick="ins(`+`)">+</button></td>
+          
+         
+         </tr>
+         <tr>
+         <td><button class="i" onclick="ins(`3`)">3</button></td>
+         <td><button class="i" onclick="ins(`2`)">2</button></td>
+         <td><button class="i" onclick="ins(`1`)">1</button></td>
+         <td><button class="b" onclick="calcular()">=</button></td>
+         
+         
+
+         </tr>
+         <tr>
+         <td><button class="b" onclick="ins(`0`)">0</button></td>
+         <td><button class="b" onclick="ins(`.`)">.</button></td>
+         <td><button class="b" onclick="job()" id="job">job</button></td>          
+         <td><button class="b" onclick="joel()">joel</button></td>
+         </tr>
+
+
+          </table>
+
+
+
+         </div>
+           
+               
+            
+        
+
+    </main>
+
+  <script>
+      
+    function    ins(numero){
+        var n = document.getElementById(`resultado`).innerHTML;
+        document.getElementById(`resultado`).innerHTML = n+numero;
+    }
+
+    function levar(){
+       document.getElementById(`resultado`).innerHTML = ""; 
+    }
+      
+    function back(){
+        var ha = document.getElementById(`resultado`).innerHTML;
+        document.getElementById(`resultado`).innerHTML = ha.substring(0,ha.length -1)
+    }
+      
+   function calcular(){
+   var j = document.getElementById(`resultado`).innerHTML;
+   document.getElementById(`resultado`).innerHTML = eval(j);
+   }
+
+   function job(){
+    var jo = document.getElementById(`resultado`).innerHTML;
+    var pr = prompt(`escreva aqui o seu nome`);
+    document.getElementById(`joe`).innerHTML = (" senhor "+pr+ " Seja bem vindo ao CalcJob");
+   }
+
+  </script>
+
+</body>
+</html>

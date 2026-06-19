@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinecal2</title>
+  <style>
+  body{
+    background-image: radial-gradient(circle,rgb(100,100,255),rgb(1,1,255));
+  }
+  .cal{
+    background-color: midnightblue;
+    height: 700px;
+    width: 450px;
+    margin: auto;
+    border-radius: 17px;
+    box-shadow: blue;
+   padding: 20px;
+   }
+  #re{
+      background-color: white;
+      height: 40px;
+      width: 350px;
+      padding: 20px;
+      margin-left: 7% ;
+      border-radius: 5px;
+      text-align: right;
+      
+  }
+
+  .b{
+    
+
+    height: 80px;
+    width: 80px;
+    margin-left: 70%;
+    padding: 20px;
+    border-radius: 10px;
+    
+    
+  }
+
+
+  </style>
+
+</head>
+<body>
+    <h1>Seja bem vindo ao Kinecalc2</h1>
+    <main>
+        <main class="cal">
+         <h4 id="re"></h4>
+         <table>
+            
+         <tr>
+         <td><button class="b" onclick="clean()">D</button></td>
+         <td><button class="b" onclick="back()">a</button></td>
+         <td><button class="b" onclick="insert(`%`)">%</button></td>
+         <td><button class="b" onclick="insert(`/`)">/</button></td>
+
+         </tr>
+
+
+
+         <tr>
+         <td><button class="b" onclick="insert(`1`)">1</button></td>
+         <td><button class="b" onclick="insert(`5`)">5</button></td>
+         <td><button class="b" onclick="insert(`9`)">9</button></td>
+         <td><button class="b" onclick="insert(`*`)">*</button></td>
+
+         </tr>
+
+
+         <tr>
+         <td><button class="b" onclick="insert(`2`)">2</button></td>
+         <td><button class="b" onclick="insert(`6`)">6</button></td>
+         <td><button class="b" onclick="insert(`4`)">4</button></td>
+         <td><button class="b" onclick="insert(`-`)">-</button></td>
+
+         </tr>
+
+
+         <tr>
+         <td><button class="b" onclick="insert(`3`)">3</button></td>
+         <td><button class="b" onclick="insert(`7`)">7</button></td>
+         <td><button class="b" onclick="insert(`8`)">8</button></td>
+         <td><button class="b" onclick="insert(`+`)">+</button></td>
+
+         </tr>
+          
+         
+         <tr>
+         <td><button class="b" onclick="insert(`0`)">0</button></td>
+         <td><button class="b" onclick="insert(`.`)">.</button></td>
+         <td><button class="b" onclick="insert(`!`)">!</button></td>
+         <td><button class="b" onclick="res()">=</button></td>
+
+         </tr>
+
+
+
+         </table>
+        </main>
+    </main>
+
+  <script>
+  function insert(n){
+    var num = document.getElementById(`re`).innerHTML;
+    document.getElementById(`re`).innerHTML = num+n;
+  }
+  function clean(){
+   document.getElementById(`re`).innerHTML="";
+  }
+
+  function back(){
+    var nu = document.getElementById(`re`).innerHTML;
+    document.getElementById(`re`).innerHTML = nu.substring(0,nu.length -1);
+  }
+
+  function res(){
+    var joa = document.getElementById(`re`).innerHTML;
+    document.getElementById(`re`).innerHTML = eval(joa)
+  }
+
+
+  </script>
+
+</body>
+</html>

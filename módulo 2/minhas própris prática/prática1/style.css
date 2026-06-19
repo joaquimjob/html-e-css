@@ -1,0 +1,77 @@
+
+@font-face {
+    font-family:"collegiateInside" ;
+    src: url(sephora_hayden/Sephora\ &\ Hayden.ttf),format(truetype),url(collegiateflf/CollegiateFLF.ttf),format(truetype);
+   
+}
+
+body{
+        background-image: radial-gradient(circle , rgb(28, 28, 139),rgb(3, 3, 148));
+        padding: 10px;
+        
+    }
+    main{
+        background-color: white;
+        height: 600px;
+        width: 900px;
+        border-radius: 15px;
+        box-shadow: 3px 3px 3px  rgba(255, 0, 0, 0.171);
+        margin: auto;
+        background-color: aqua;
+        text-align: center;
+
+    }
+     
+     div{
+     height: 600px;
+     width: 900px;
+     border-radius: 15px;
+     background-color: white;
+     margin: auto;
+     background-color: aqua;
+     text-align: center;
+     color: rgb(80, 19, 19);
+     
+
+     }
+
+    .k{
+        text-align: center;
+        color: rgb(42, 42, 214);
+        padding: 15px;
+    }
+
+
+    .h{
+        padding: 25px;
+        color: brown;
+        text-align: center;
+     font-family: "campanascript";
+     font-size: 50px;
+
+    }
+
+    div > p{
+        display: none;
+    }
+
+    div:hover > p{
+        display: block;
+        font-family: "collegiateInside";
+        color: rgb(2, 2, 116);
+
+    }
+
+    div:hover{
+        color: red;
+    }
+
+
+    .c{
+      background-color: white;
+
+    }
+
+    input{
+        
+    }

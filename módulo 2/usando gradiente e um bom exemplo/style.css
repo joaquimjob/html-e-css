@@ -1,0 +1,33 @@
+body{
+    background-image: linear-gradient(to right,#FFEEC9,#FADA93);
+}
+
+
+
+
+main{
+    background-color:#DAE7FF ;
+    height: 400px;
+    width: 800px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 3px 4px 4px #a59164a6;
+    border-radius: 10px;
+}
+
+h1{
+color:#1C4694 ;
+text-align: center;
+text-shadow:2px 3px 3px rgb(162, 195, 238) ;
+
+
+}
+h2{
+color: #2c4980;
+}
+
+p{
+color:#4d6694 ;
+text-align: justify;
+
+}

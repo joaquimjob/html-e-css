@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>criando qual auer coisa</title>
+   <style>
+   body{
+    background-color: bisque;
+    text-align: center;
+   }
+     button{
+        border-radius: 10px;
+        background-color: white;
+        color: blue;
+     }
+
+     input{
+          height: 100px;
+          width: 200px;
+          text-align: center;
+          border-radius: 3px;
+     }
+ 
+   </style>
+
+</head>
+<body>
+ 
+    <header>    
+        <h1 id="ma">Criando Job</h1>
+    
+    </header>
+  <section>
+  <main>
+    
+        <button id="jo" onclick="dan()">clica aqui pra mudar a cor</button>
+
+        <button onclick="van()">por favor clique aqui primeiro</button>
+        <button on></button>
+  </main>
+  <h2 id="job">Olá Mundo Job é bom</h2> 
+
+  
+
+  <main>
+   <input type="text" name="" id="fruta" value="Escreva a fruta aqui">
+  <button onclick="jan()">clica pra solucionar</button>
+
+   <input type="text" name="" id="resu" value="o resultado vai aparecer aqui" >
+  </main>
+
+  </section>
+   
+
+  <footer>
+
+
+  </footer>
+ 
+  <script>
+
+  function dan(){
+  let produto = `Computador`;
+  const preco = 500;
+  let disponivel = true;
+  let ja = window.document.getElementById(`ma`).innerHTML = (`O seu resultado `+ produto + preco + disponivel);
+
+
+  }  
+    let h = window.document.getElementById(`job`); 
+  let idade = prompt(`Escreva a sua idade aqui`);
+  if(idade>=18){
+  h.innerHTML= `Com `+idade+ " anos de idade Podes dirigir";
+  }
+  else if (idade<18){
+    h.innerHTML = `Com ` +idade+ ` anos de idade não podes dirigir`
+  }
+
+
+  
+  let fru = prompt(`Escreva uma fruta qualquer`)
+  let res = document.getElementById(`resu`);
+ switch (fru){
+ case `banana`:  console.write (`Doce`);break;
+ case `limao` :  console.writeln(`Azedo`);break;
+ default: console.writeln (`Desconhecido`);
+
+ 
+  
+
+ }
+ 
+
+
+
+
+  
+
+
+  </script>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peseudo-classes</title>
+
+    <style>
+       @font-face {
+        font-family: "sephora" ;
+        src: url(sephora_hayden/Sephora\ &\ Hayden.ttf);
+       }
+
+        main > h3{
+            display: none;
+        }
+
+        main:hover > h3{
+            display: block;
+            font-size: 100px;
+            text-align: center;
+            text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.068);
+            font-family: "sephora";
+            color: blue;
+        }
+        main:hover{
+            color: brown;
+            font-style: italic;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> Seja bem vindo a kinecom</h1>
+  <main>
+   trás o cursor aqui
+    <h3>Muito obrigado</h3>
+
+  </main>
+
+</body>
+</html>
